@@ -5,5 +5,6 @@
     "onboarding": false,
     "platform": "github",
     "autodiscover": true,
-    "autodiscoverFilter": ["seiferma/*"]
+    "autodiscoverFilter": ["seiferma/*"],
+    "reviewers": ["seiferma@users.noreply.github.com"]
   }

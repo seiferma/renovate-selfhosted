@@ -1,0 +1,17 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "pinDigests": false,
+    "customManagers": [
+        {
+            "customType": "regex",
+            "description": "Update version variables in Dockerfiles and docker-bake.hcl",
+            "fileMatch": [
+                "(^|/|\\.)Dockerfile$",
+                "(^|/|\\.)docker-bake.hcl$"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>[a-z0-9-.]+?) depName=(?<depName>.+?)\\s((?:ENV|ARG) )?.+?\\s*=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
+            ]
+        }
+    ]
+}
