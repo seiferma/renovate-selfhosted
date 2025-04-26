@@ -10,8 +10,9 @@
                 "(^|/|\\.)docker-bake.hcl$"
             ],
             "matchStrings": [
-                "# renovate: datasource=(?<datasource>[a-z0-9-.]+?) depName=(?<depName>.+?)\\s((?:ENV|ARG) )?.+?\\s*=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
-            ]
+                "# renovate: datasource=(?<datasource>[a-z0-9-.]+?) depName=(?<depName>.+?)( versioning=(?<versioning>.*?))?\\s((?:ENV|ARG) )?.+?\\s*=\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
+            ],
+            "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
         }
     ]
 }
