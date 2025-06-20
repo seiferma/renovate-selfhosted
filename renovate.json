@@ -3,5 +3,6 @@
     "extends": [
       "config:best-practices"
     ],
-    "dependencyDashboard": false
+    "dependencyDashboard": false,
+    "assignees": ["seiferma"]
   }
