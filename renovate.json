@@ -4,5 +4,6 @@
       "config:best-practices"
     ],
     "dependencyDashboard": false,
-    "assignees": ["seiferma"]
+    "assignees": ["seiferma"],
+    "reviewers": ["seiferma"]
   }
